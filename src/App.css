@@ -1,0 +1,76 @@
+.bg{
+    background-size: cover;
+    width: 535px;
+    height: 535px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.chess{
+    position: absolute;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+.hightlight{
+    animation: highlight 0.5s infinite;
+}
+@keyframes rotation {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes highlight {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.controls{
+    text-align: center;
+}
+.restart{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #00B7FF;
+    font-size: 20px;
+}
+@media (max-width: 719px) {
+    .chat{
+        display: none;
+    }
+}
+.chat{
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(50% - 290px);
+    height: calc(100% - 150px);
+    overflow: auto;
+}
+.chat span{
+    display: block;
+}
+
+.chat input{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 1px #aaaaaa;
+    outline: 0;
+    height: 40px;
+    padding: 5px 10px;
+    width: 80%;
+}
